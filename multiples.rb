@@ -8,3 +8,5 @@ def sum_of_multiples(number)
     end
   multiples_array.inject{|sum,x| sum + x }
 end
+
+p sum_of_multiples(10)
