@@ -1,11 +1,12 @@
-def vowel_counter(string)
-  vowels_array = []
-  vowels = /[aeiou]/
-  split_string = string.split("")
-  split_string.each do |character|
-    if character.match(vowels)
-      vowels_array << character
+def countVowels(str='')
+  vowels = []
+  if str.is_a?(String)
+    split_string = str.split("")
+    split_string.each do |character|
+      if character.match(/[aeiou]/i)
+        vowels << character
+        end
       end
-    end
-  p vowels_array.count
-end
+  vowels.count
+  end 
+end 
